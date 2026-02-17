@@ -1,0 +1,74 @@
+.goals {
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainGoal {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 4rem;
+
+    h2 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+
+    h3 {
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.taskItem {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateX(10px);
+    }
+
+    .number {
+        background: var(--secondary-color);
+        color: var(--white);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+}

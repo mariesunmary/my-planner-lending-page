@@ -1,0 +1,57 @@
+.footer {
+    background-color: #2D3748;
+    color: var(--white);
+    padding: 4rem 0 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.brand {
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--white);
+    }
+
+    p {
+        color: #A0AEC0;
+        max-width: 300px;
+    }
+}
+
+.contacts {
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: var(--white);
+    }
+
+    p {
+        color: #A0AEC0;
+        margin-bottom: 0.5rem;
+
+        a {
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.copyright {
+    border-top: 1px solid #4A5568;
+    padding-top: 2rem;
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+}
